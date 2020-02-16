@@ -2,3 +2,6 @@
 logs.txt
 target
 lesson2_Barhanova.iml
+src/test/ExecutionListener
+src/test/FirstTest
+src/test/ResultSender
