@@ -35,6 +35,7 @@ import java.util.concurrent.TimeUnit;
      public static void OtusAutorizationAndAddPersonalData (){
          WebDriverManager.chromedriver().setup();
          driver = new ChromeDriver();
+         driver.manage().window().maximize();
          driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 
@@ -101,7 +102,8 @@ import java.util.concurrent.TimeUnit;
     public static void checkOtusPersonalData(){
     WebDriverManager.chromedriver().setup();
     driver = new ChromeDriver();
-    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
         try{
             driver.get(otusUrl);
