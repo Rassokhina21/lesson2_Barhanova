@@ -43,7 +43,7 @@ public class Test0001 {
         driver.findElement(By.xpath(autorsLink)).click();
         String actualTitle = driver.getTitle();
         Assert.assertEquals(actualTitle, autorsTitle);
-        logger.info("Тест 0002 прошел успешно");
+        logger.info("Тест 0001 прошел успешно");
 
 
     }
